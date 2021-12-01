@@ -3,131 +3,234 @@
 * {
   font-family: 'Josefin Sans', sans-serif;
 }
-h1 {
-  /* position: absolute;
-  width: 500px;
-  height: 2vh;
-  left: 15vw;
-  top: 10vh; */
-  margin-bottom: 30px;
-  font-family: Josefin Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 200px;
-  line-height: 90%;
-  /* identical to box height, or 180px */
-  
-  text-align: right;
-  
-  color: #FFFFFF;
-}
 
-h2 {
-/* position: absolute;
-width: 500px;
-left: 20vw; */
-width: max-content;
-margin-top: 10px;
-padding-left: 200px;
-font-family: Hiragino Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 70px;
-line-height: 90%;
-/* or 63px */
-
-
-color: #FFFFFF;
-}
-
-bold {
-font-size: 110px;
-
-}
-
-.App {
-  /* text-align: center; */
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-.augurlogo{
-  position: absolute;
-  left: 50px;
-  top: 50px;
-  
-  width: 60px;
-  height: auto;
-}
-
-.arrow{
-  margin-left: 10px;  
-}
-.arrow-nav{
-position: absolute;
-/* width: 546px; */
-height: 27px;
-right: 5vw;
-bottom: 7vh;
-text-decoration: none;
-
-font-family: Hiragino Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-line-height: 90%;
-/* identical to box height, or 27px */
-
-
-color: #FFFFFF;
-}
-
-.title-hero{
-  display: flex;
-  flex-direction: column;
-
-  position: absolute;
-  width: 500px;
-  height: 2vh;
-  left: 15vw;
-  top: 10vh;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+.page{
+  width: calc(100% - 240px);
+  height: calc(100vh - 160px);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 120px;
+  padding-right: 120px;
   background-color: #383737;
   background: url('./images/augurbckg.png');
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  overflow: hidden;
+
+}
+.__home {
+  align-items: flex-end;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.__information {
+  height: calc(100vh - 160px);
+  align-items: center;
+  /* font-size: calc(10px + 2vmin); */
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.__action {
+  padding-top: 15vh;
+  align-items: center;
+  align-content: center;
+  background: rgba(0, 0, 0, 0.65);
+
+}
+.__action::before {
+  padding-top: 15vh;
+}
+
+.title-hero {
+  width: 100%;
+  height: fit-content;
+  margin-top: 15vh;
+}
+.title {
+  /* margin-bottom: 30px; */
+  /* font-family: Josefin Sans; */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 6em;
+  line-height: 80%;
+  color: white;
+}
+.__outline {
+  color: rgba(0, 0, 0, 0);
+  /* text-decoration: 2px solid white ; */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+
+}
+.nav {
+  text-decoration: none;
+  
+  font-family: Hiragino Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 100%;
+  width: 43vw;
+  bottom: 0px;
+  text-align: justify;
+  color: #666666;
+  /* identical to box height, or 27px */
+}
+.__next-page {
+  color:white;
+  display: inline;
+  text-align: end;
+}
+.maslow {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 10vh;
+}
+.maslow__tier{
+  width: fit-content;
+  height: fit-content;
+  padding: 2px;
+  transition: all 1s ease-in-out;
+  opacity: 75%;
+  background-color: rgba(0, 0, 0, 0);
+  border-style: none;
 }
 
-.App-link {
-  color: #61dafb;
+.maslow__tier :hover{
+  transform: scale(1.03);
+  opacity: 100%;
+  margin: 2px;
 }
-
-.emph{
+.right{
+  height: inherit;
+  width: 42vw;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.info{
+  margin-top: 10px;
+  padding-top: 20vh;
+  margin-bottom: 20px;
+}
+.__header{
+  font-style: normal;
   font-weight: bold;
+  font-size: 50px;
+  line-height: 80%;
+  color: rgb(119, 119, 119);
+  margin-bottom: 20px;
+}
+.__text{
+  text-decoration: none;
+  
+  font-family: Hiragino Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 95%;
+}
+.climate-action {
+  align-items: center;
+  text-align: center;
+  color: rgb(193, 193, 193);
+}
+.__act{
+  padding-top: 20vh;
+  padding-right:28vw;
+  padding-left: 28vw;
+  font-family: Hiragino Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 100%;
+
+  text-align: center;
+  color: rgb(193, 193, 193);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.__actbtn {
+  margin-top: 20px;
+  border-radius: 0px;
+  text-decoration: none;
+  padding: 18px 24px;
+  font-size: 14px;
+  line-height: 40px;
+  text-transform: uppercase;
+  width: max-content;
+
+  border:solid 2px #fff;
+  background: transparent;
+  color: #fff !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.__actbtn:hover{
+  border:solid 2px #fff;
+  background: #fff;
+  color: #1f1f1f !important;
 }
+
+.cards{
+  margin-top: 6vh;
+  display: flex;
+  flex-direction: horizontal;
+  justify-content: space-evenly
+
+}
+.card{
+  margin: 10px 20px;
+}
+
+.__crysbtn {
+  border-radius: 115px 150px 130px 15px;
+  margin-top: 20px;
+  border-radius: 0px;
+  text-decoration: none;
+  padding: 18px 24px;
+  font-size: 14px;
+  line-height: 40px;
+  text-transform: uppercase;
+  width: max-content;
+
+  border:solid 2px #fff;
+  background: transparent;
+  color: #fff !important;
+}
+
+.__crysbtn:hover{
+  border:solid 2px #fff;
+  background: #fff;
+  color: #1f1f1f !important;
+}
+.crys {
+  padding-top: 2vh;
+}
+.cb {
+  width: 46%;
+}
+.working{
+  text-align: center;
+  background: -webkit-linear-gradient(45deg, #fbd3ff, #FFA88C, #bf95c4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 120%;
+
+
+}
+.__cbworking{
+  background: url('./images/augurbckgexp.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
