@@ -23,7 +23,7 @@ To start the augUR flask model server:
 
 4. run `python3 -m venv venv` to create a virtual environment for the flask server
 5. run `source venv/bin/activate` to activate the virtual enviornment that was just created
-6. run `pip install flask python-dotenv` to add flask support
+6. run `pip install flask python-dotenv torch torchvision tqdm opencv-python` to add support for flask and the climate model
 7. run `cd ..` to move up a directory (should now be in 'augur')
 8. run `yarn start-api` to start the flask server
 
