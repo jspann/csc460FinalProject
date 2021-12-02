@@ -9,7 +9,8 @@ import {
   Action,
   Information,
   CrystalBall,
-  CrystalBallWorking
+  CrystalBallWorking,
+  Results
 } from "./components";
 
 ReactDOM.render(
@@ -22,6 +23,7 @@ ReactDOM.render(
       <Route path="/information" element={<Information/>} />
       <Route path="/crystalball" element={<CrystalBall/>} />
       <Route path="/crystalballworking" element={<CrystalBallWorking/>} />
+      <Route path="/results" element={<Results/>} />
 
     </Routes>
   </Router>,

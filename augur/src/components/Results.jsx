@@ -1,45 +1,45 @@
-import rip from "../images/maslow1.svg";
-import arrow from "../images/arrowpg1.png";
+import s1 from "../images/cc2018-21.jpg";
 import "../app-copy.css";
 
-function Information() {
-  function clickMaslow(){
+function Results() {
+  function clickMaslow() {
     console.log("CLICKED");
   }
   return (
     <div className="page __information">
-      <body className="maslow">
-        <button className="maslow__tier" onClick={clickMaslow}><img src={m5} alt="Maslow's Self Actualization Need"></img></button>
-        <button className="maslow__tier" onClick={clickMaslow}><img src={m4} alt="Maslow's Self Esteem Need"></img></button>
-        <button className="maslow__tier" onClick={clickMaslow}><img src={m3} alt="Maslow's Love and Belonging Need"></img></button>
-        <button className="maslow__tier" onClick={clickMaslow}><img src={m2} alt="Maslow's Safety Need"></img></button>
-        <button className="maslow__tier" onClick={clickMaslow}><img src={m1} alt="Maslow's Physiological Need"></img></button>
-      </body>
+      <div className="maslow">
+        <img className="result-img" src={s1} alt="placeholder"></img>
+      </div>
       <div className="right">
         <div className="info">
-          <div className="__header">your future, your needs</div>
-          <div className="__text">Maslow’s hierarchy of needs state that certain needs take precedence over others.</div>
-          <div className="__text">Starting from the bottom, unless we have some satisfied state of our physiological need, we won't be able to attain the next tier, safety need.</div>
+          <div className="__header">we regret to inform you</div>
+          <div className="__text">This is what your future looks like.</div>
+          <div className="__text">
+            It's wet/hot/whatever, and while it's not totally un-livable yet,
+            you'll always be scared that this event might happen again...
+          </div>
+          <div className="__text">
+            What if you have kids or grandkids? What will they go through?
+          </div>
+          <div className="__text">
+            Well they may not be so lucky, they’ll probably have to live in this
+            condition everyday.
+          </div>
           <div className="__text">--</div>
-          <div className="__text">Physiological need refers to the basics: like air, food, water and shelter</div>
-          <div className="__text">Safety need refers to: personal security and health</div>
-          <div className="__text">Love and belonging refers to relationships like: friendship, intimacy, family, and a sense of connection</div>
-          <div className="__text">Self esteem is respect, status, recognition, freedom and strength</div>
-          <div className="__text">and Self actualization is the desire to become the most that one can be</div>
-          <div className="__text">--</div>
-          <div className="__text">click the highest tier of the needs you have achieved</div></div>
 
-        <div className="nav">
-        What if we said your most basic need, the physiological need, will be endangered in the future.
-          <a className="nav __next-page" href="/Action">
-            {" "}
-            What do you mean?{" "}
-            <img src={arrow} className="arrow" alt="arrow"></img>
-          </a>
+          <div className="nav">
+            Has this impacted your view of climate change? Is it coming sooner
+            than you think? Do you feel the need to take climate change more
+            seriously?
+            <a className="nav __next-page" href="/Action">
+              {" "}
+              Send us a heart or tell us what you feel!{" "}
+            </a>
+          </div>
         </div>
       </div>
     </div>
   );
 }
 
-export default Information;
+export default Results;

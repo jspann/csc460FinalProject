@@ -221,6 +221,9 @@
   width: 40vw;
   height: fit-content;
 }
+.result-img{
+  width: 30vw;
+}
 .file-drop{
   background: url('./images/cb.png');
   background-repeat: no-repeat;
