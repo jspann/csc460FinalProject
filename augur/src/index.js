@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import {
   Home,
-  About,
+  // About,
   Action,
   Information,
   CrystalBall,
@@ -18,15 +17,12 @@ ReactDOM.render(
     {/* <Navigation /> */}
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
+      {/* <Route path="/about" element={<About />} /> */}
       <Route path="/action" element={<Action/>} />
       <Route path="/information" element={<Information/>} />
       <Route path="/crystalball" element={<CrystalBall/>} />
       <Route path="/crystalballworking" element={<CrystalBallWorking/>} />
-      {/* <Route path="/blog" element={<Blog />}>
-        <Route path="" element={<Posts />} />
-        <Route path=":postSlug" element={<Post />} />
-      </Route> */}
+
     </Routes>
   </Router>,
 
