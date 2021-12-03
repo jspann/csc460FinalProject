@@ -21,11 +21,11 @@ To start the augUR flask model server:
 
 3. cd 'augur/api'
 
-4. run `python3 -m venv venv` to create a virtual environment for the flask server
-5. run `source venv/bin/activate` to activate the virtual enviornment that was just created
-6. run `pip install flask python-dotenv torch torchvision tqdm opencv-python visdom sklearn tensorflow==1.5.0` to add support for flask and the climate model
-7. run `cd ..` to move up a directory (should now be in 'augur')
-8. run `yarn start-api` to start the flask server
+4. Make sure you have anaconda installed
+5. Create an anaconda environment for this project (`conda create -n augurenv python=3.6`)
+6. run `source activate augurenv` to activate the virtual enviornment that was just created
+7. run `python -m pip install flask python-dotenv torch torchvision tqdm opencv-python visdom sklearn tensorflow==1.5.0` to add support for flask and the climate model
+8. run `python api.py` to start the flask server
 
 To Start the React server (in a second terminal window):
 
